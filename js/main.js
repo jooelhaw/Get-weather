@@ -37,7 +37,7 @@ async function getData(lat = "", long = "", q = `${lat},${long}`) {
   //!898cb6e16b794afaa1f220142240612
 
   try {
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=898cb6e16b794afaa1f220142240612&q=${q}&days=3`);
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=898cb6e16b794afaa1f220142240612&q=${q}&days=3`);
 
     if (!(response.ok == true)) {
       let responseData = await response.json();
@@ -53,7 +53,7 @@ async function getData(lat = "", long = "", q = `${lat},${long}`) {
 
 async function searchCity(params) {
   try {
-    let response = await fetch(`http://api.weatherapi.com/v1/search.json?key=898cb6e16b794afaa1f220142240612&q=${params}`);
+    let response = await fetch(`https://api.weatherapi.com/v1/search.json?key=898cb6e16b794afaa1f220142240612&q=${params}`);
     if (response.ok) {
       let data = await response.json();
       let aData = Array.from(data);
