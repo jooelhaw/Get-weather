@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<title>Get Weather</title>
+
+	<!-- Loading third party fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="images/cloudy.png" type="image/x-icon">
+	<!-- Loading main css file -->
+	<link rel="stylesheet" href="/css/style.min.css">
+
+
+</head>
+
+
+<body>
+
+	<div class="site-content">
+		<div class="site-header">
+			<div class="container">
+				<a href="index.html" class="branding">
+					<img src="images/logo.png" alt="" class="logo">
+					<div class="logo-type">
+						<h1 class="site-title">Weather</h1>
+						<small class="site-description">tagline goes here</small>
+					</div>
+				</a>
+
+				<!-- Default snippet for navigation -->
+				<div class="main-navigation">
+					<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+					<ul class="menu">
+						<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+						<li class="menu-item"><a href="#">News</a></li>
+						<li class="menu-item"><a href="#">Live cameras</a></li>
+						<li class="menu-item"><a href="#">Photos</a></li>
+						<li class="menu-item"><a href="contact.html">Contact</a></li>
+					</ul>
+					<!-- .menu -->
+				</div> <!-- .main-navigation -->
+
+				<div class="mobile-navigation"></div>
+
+			</div>
+		</div> <!-- .site-header -->
+
+		<div class="hero" data-bg-image="images/banner.png" style="background-image: url(/images/banner.png);">
+			<div class="container">
+				<form action="#" class="find-location">
+					<input type="text" placeholder="Find your location..." id="searchInput">
+					<input type="submit" value="Find" id="searchBtn">
+
+				</form>
+				<div id="searchResult" class="searchResult d-none flex-column justify-content-center align-items-center">
+
+				</div>
+
+			</div>
+
+		</div>
+		<div class="forecast-table">
+			<div class="container">
+				<div class="forecast-container">
+					<div class="today forecast">
+						<div class="forecast-header">
+							<div class="day">Monday</div>
+							<div class="date">6 Oct</div>
+						</div> <!-- .forecast-header -->
+						<div class="forecast-content">
+							<div class="location">New York</div>
+							<div class="degree">
+								<div class="num">23<sup>o</sup>C</div>
+								<div class="forecast-icon">
+									<img src="images/icons/icon-1.svg" alt="icon" width=90>
+								</div>
+								<div class="forecast-condition">
+									<span class="text-primary">Sunny</span>
+								</div>
+							</div>
+							<span><img src="images/icon-umberella.png" alt="icon-umberella">20%</span>
+							<span><img src="images/icon-wind.png" alt="icon-wind">18km/h</span>
+							<span><img src="images/icon-compass.png" alt="icon-compass">East</span>
+						</div>
+					</div>
+					<div class="today forecast">
+						<div class="forecast-header">
+							<div class="day text-center">Tuesday</div>
+						</div>
+						<!-- .forecast-header -->
+						<div class="forecast-content">
+							<div class="forecast-icon">
+								<img src="images/icons/icon-3.svg" alt="" width=48>
+							</div>
+							<div class="degree">23<sup>o</sup>C</div>
+							<small>18<sup>o</sup></small>
+							<div>
+								<span class="text-primary forecast-condition">Sunny</span>
+							</div>
+						</div>
+					</div>
+					<div class="today forecast">
+						<div class="forecast-header">
+							<div class="day">Wednesday</div>
+						</div> <!-- .forecast-header -->
+						<div class="forecast-content">
+							<div class="forecast-icon">
+								<img src="images/icons/icon-5.svg" alt="" width=48>
+							</div>
+							<div class="degree">23<sup>o</sup>C</div>
+							<small>18<sup>o</sup></small>
+							<div>
+								<span class="text-primary forecast-condition">Sunny</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<form action="#" class="subscribe-form">
+							<input type="text" placeholder="Enter your email to subscribe...">
+							<input type="submit" value="Subscribe">
+						</form>
+					</div>
+					<div class="col-lg-3 col-md-offset-1">
+						<div class="social-links">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-pinterest"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+			</div>
+		</footer> <!-- .site-footer -->
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
